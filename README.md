@@ -10,23 +10,15 @@ In addition to the formulas of *s* and *Eo* for -4000-8000, I also developed ano
 
 The Jupyter notebook `examples.ipynb` shows examples of using the functions in this package.
 
-The following is a list of main functions provided in this package. 
+The following is a list of main functions provided in this package. All functions take the two-part Julian date `jd0` and `jd1` as input arguments. Note that `jd0` and `jd1` must be numbers and not arrays.
 
 - `s_Vondrak_IAU2000A_spline(jd0, jd1)` in `s_Vondrak_IAU2000A_spline.py`: Calculate the CIO locate *s* compatible with the Vondrák et al/IAU2000A precession-nutation model at TT Julian date jd = jd0 + jd1 using a spline fitting formula. This formula covers the time span from -4000 to 8000.
 
-- `s_Vondrak_IAU2000A_spline_vec(jd0, jd1)` in `s_Vondrak_IAU2000A_spline.py`: Vectorized version of `s_Vondrak_IAU2000A_spline(jd0, jd1)`.
-
 - `Eo_Vondrak_IAU2000A_spline(jd0, jd1)` in `Eo_Vondrak_IAU2000A_spline.py`: Calculate the equation of origin *Eo* compatible with the Vondrák et al/IAU2000A precession-nutation model at TT Julian date jd = jd0 + jd1 using a spline fitting formula. This formula covers the time span from -4000 to 8000.
-
-- `Eo_Vondrak_IAU2000A_spline_vec(jd0, jd1)` in `Eo_Vondrak_IAU2000A_spline.py`: Vectorized version of `Eo_Vondrak_IAU2000A_spline(jd0, jd1)`.
 
 - `s_Vondrak_longT(jd0, jd1)` in `s_Vondrak_longT.py`: Calculate *s* compatible with the Vondrák et al/IAU2000A model at TT Julian date jd = jd0 + jd1. This function covers ±200 millennia time span. It returns the same values as `s_Vondrak_IAU2000A_spline(jd0, jd1)` in -4000-8000, but ignores nutation outside that time interval.
 
-- `s_Vondrak_longT_vec(jd0, jd1)` in `s_Vondrak_longT.py`: Vectorized version of `s_Vondrak_longT(jd0, jd1)`.
-
 - `Eo_Vondrak_longT(jd0, jd1)` in `Eo_Vondrak_longT.py`: Calculate *Eo* compatible with the Vondrák et al/IAU2000A model at TT Julian date jd = jd0 + jd1. This function covers ±200 millennia time span. It returns the same values as `Eo_Vondrak_IAU2000A_spline(jd0, jd1)` in -4000-8000, but ignores nutation outside that time interval.
-
-- `Eo_Vondrak_longT_vec(jd0, jd1)` in `Eo_Vondrak_longT.py`: Vectorized version of `Eo_Vondrak_longT(jd0, jd1)`.
 
 - `GAST_from_Eo(jd0_ut1, jd1_ut1, Eo)` in `ERA_GAST.py`: Calculate the Greenwich apparent sidereal time (GAST) at UT1 Julian date `jd_ut1 = jd0_ut1 + jd1_ut1` from *Eo*. It simply subtracts *Eo* from the Earth rotation angle (ERA) computed using the equation defining UT1.
 
