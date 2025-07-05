@@ -23,7 +23,7 @@ The following is a list of main functions provided in this repository. Most func
 - `GAST_from_Eo(jd0_ut1, jd1_ut1, Eo)` in `ERA_GAST.py`: Calculate the Greenwich apparent sidereal time (GAST) at UT1 Julian date `jd_ut1 = jd0_ut1 + jd1_ut1` from *Eo*. It simply subtracts *Eo* from the Earth rotation angle (ERA) computed using the equation defining UT1.
 
 
-Following [SOFA](http://www.iausofa.org/), Julian date is specified by two parts jd0 and jd1 in any way users may find convenient. For example, JD = 2450123.7 could be expressed in any of these ways, amomg others.
+Following [SOFA](http://www.iausofa.org/), Julian date is specified by two parts jd0 and jd1 in any way users may find convenient. For example, JD = 2450123.7 could be expressed in any of these ways, among others.
 
                 jd0             jd1
             2450123.7           0.0       (JD method)

@@ -10,7 +10,7 @@ def Eo_Vondrak_IAU2000A_spline(jd0, jd1):
 
     The interval [-60,60] are divided into sub-intervals [-60, -40], [-40, -20], [-20, -5], [-5, 5], [5, 20], [20, 40] and [40, 60]. Each sub-interval has a fitting formula. The inner boundary points -40, -20, -5, 5, 20 and 40 are the knots in the regression spline. The function Eo(T) and its first derivative Eo'(T) are continuous, but the second and higher derivatives of Eo are discontinuous at the knots.
 
-    Following SOFA, Julian date is specified by two parts jd0 and jd1 in any way users may find convenient. For example, JD(TT)=2450123.7 could be expressed in any of these ways, amomg others.
+    Following SOFA, Julian date is specified by two parts jd0 and jd1 in any way users may find convenient. For example, JD(TT)=2450123.7 could be expressed in any of these ways, among others.
                 jd0             jd1
             2450123.7           0.0       (JD method)
             2451545.0       -1421.3       (J2000 method)

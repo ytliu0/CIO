@@ -12,7 +12,7 @@ def Eo_Vondrak_longT(jd0, jd1):
 
     Following SOFA, Julian date is specified by two parts jd0 and jd1 in any way
     users may find convenient. For example, JD(TT)=2450123.7 could be expressed
-    in any of these ways, amomg others.
+    in any of these ways, among others.
 
                 jd0             jd1
             2450123.7           0.0       (JD method)
